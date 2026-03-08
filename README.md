@@ -43,7 +43,7 @@ ecap/
 
 ### Prerequisites
 
-- Node.js (version 18 or higher)
+- Node.js (version 22 or higher)
 - Git
 
 ### Installation
