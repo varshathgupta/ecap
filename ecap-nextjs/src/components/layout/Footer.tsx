@@ -35,7 +35,7 @@ export default function Footer() {
               </div>
             </div>
             <p className="text-earth-300 body-large max-w-md mb-6">
-              Creating employment awareness and guiding students towards successful careers since 2013. 
+              Creating employment awareness and guiding students towards successful careers since 2020. 
               Operating under Sri Mariamman Education & Charitable Trust.
             </p>
             <p className="font-tamil text-earth-400 text-lg mb-4">

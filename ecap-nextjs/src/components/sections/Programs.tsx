@@ -33,7 +33,7 @@ const programs = [
     icon: HeartHandshake,
     title: 'Uyir Kapom',
     subtitle: 'உயிர் காப்போம்',
-    description: 'First aid awareness program training students with life-saving skills and emergency response techniques.',
+    description: 'In association with Alert NGO, this first aid awareness program trains students with life-saving skills and emergency response techniques.',
     stats: [
       { value: '300+', label: 'Attended' },
       { value: '12+', label: 'Sessions' },

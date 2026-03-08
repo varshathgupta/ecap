@@ -3,6 +3,7 @@
 import { motion } from 'framer-motion';
 import { Heart, Users, Target, Award } from 'lucide-react';
 import { useInView } from '@/hooks/useInView';
+import Image from 'next/image';
 
 const features = [
   {
@@ -93,19 +94,14 @@ export default function About() {
             transition={{ duration: 0.8, delay: 0.2 }}
             className="relative"
           >
-            <div className="relative rounded-3xl overflow-hidden shadow-2xl aspect-[4/5] bg-gradient-to-br from-primary-200 to-ocean-200">
-              {/* Placeholder for image - replace with actual image */}
-              <div className="absolute inset-0 flex items-center justify-center">
-                <div className="text-center p-8">
-                  <Heart className="w-20 h-20 text-primary-600 mb-4 mx-auto" fill="currentColor" />
-                  <p className="text-earth-700 font-accent">
-                    Replace with your team/activity photo
-                  </p>
-                  <p className="text-sm text-earth-600 mt-2">
-                    Add images to public/images folder
-                  </p>
-                </div>
-              </div>
+            <div className="relative rounded-3xl overflow-hidden shadow-2xl aspect-video lg:aspect-[4/5] bg-gradient-to-br from-primary-100 to-ocean-100">
+              <Image
+                src="/images/ecap-group.jpeg"
+                alt="E-CAP Team"
+                fill
+                className="object-contain"
+                sizes="(max-width: 768px) 100vw, 50vw"
+              />
             </div>
             
             {/* Decorative elements */}
@@ -157,7 +153,13 @@ export default function About() {
               their employment in this competitive society.
             </p>
             <div className="flex items-center space-x-4">
-              <div className="w-16 h-16 rounded-full bg-gradient-to-br from-primary-400 to-coral-400" />
+              <Image
+                src="/images/members/gokul-tcm.jpg"
+                alt="Gokul TCM"
+                width={64}
+                height={64}
+                className="w-16 h-16 rounded-full object-contain bg-gradient-to-br from-primary-100 to-ocean-100"
+              />
               <div>
                 <p className="font-display font-bold text-xl text-earth-900">Gokul TCM</p>
                 <p className="text-earth-600 font-accent">Founder & Director, E-CAP</p>
